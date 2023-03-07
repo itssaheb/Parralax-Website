@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", "sans-serif";
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.container {
+    position: relative;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: -1;
+}
+
+.background {
+    transform: translateZ(-40px) scale(5);
+}
+
+.foreground {
+    transform: translateZ(-20px) scale(3);
+}
+
+.background,
+.foreground {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.heading {
+    position: absolute;
+    top: 20vh;
+    font-size: 3rem;
+    color: #275a8a;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px #8fabbf;
+
+}
+
+section {
+    background-color: #275a8a;
+    width: 100vw;
+    padding-top: 3rem;
+}
+
+.section-heading {
+    font-size: 2rem;
+    color: aliceblue;
+    padding: 0 2rem;
+    font-weight: bold;
+}
+
+.description {
+    color: aliceblue;
+    font-size: 1rem;
+    padding: 2rem 2rem;
+    font-weight: bold;
+}
+
+.bg {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg1 {
+    background-image: url("/Images/sport-1.jpg");
+}
+
+.bg2 {
+    background-image: url("/Images/sport-2.jpg");
+}
+
+.bg3 {
+    background-image: url("/Images/sport-3.jpg");
+}
+
+.img-heading {
+
+    background-color: aliceblue;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+
+
+}
+
+footer
+{
+    width: 100vw;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer
+{
+    font-size: 1.5rem;
+    padding: 2rem;
+    color: rgb(173, 170, 170);
+    text-align: center;
+}
+.footer a{
+    
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px aqua;
+}
+.footer a:hover{
+    color:aquamarine;
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .heading {
+        font-size: 4rem;
+    
+    }
+    .section-heading {
+        font-size: 3rem;
+        padding: 0 2.5rem;
+    }
+    .description {
+        font-size: 1.3rem;
+        padding: 3rem 2.5rem;
+    }
+    .img-heading {
+
+        font-size: 2rem;
+    
+    
+    }
+    
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .heading {
+        font-size: 6rem;
+    
+    }
+    .section-heading {
+        font-size: 4rem;
+        padding: 0 3rem;
+    }
+    .description {
+        font-size: 1.5rem;
+        padding: 3rem 3rem;
+    }
+    .img-heading {
+
+        font-size: 2.5rem;
+    
+    
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .heading {
+        font-size: 8rem;
+    
+    }
+    section {
+        padding-top: 4rem;
+    }
+    .section-heading {
+        font-size: 4.5rem;
+        padding: 0 3.5rem;
+    }
+    .description {
+        padding: 3.5rem 3.5rem;
+    }
+    .img-heading {
+
+        font-size: 3rem;
+    
+    
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .heading {
+        font-size: 10rem;
+    
+    }
+    section {
+        padding-top: 5rem;
+    }
+    .section-heading {
+        font-size: 5rem;
+        padding: 0 5rem;
+    }
+    .description {
+        font-size: 2rem;
+        padding: 5rem 5rem;
+    }
+    .img-heading {
+
+        font-size: 3.5rem;
+    
+    
+    }
+}
